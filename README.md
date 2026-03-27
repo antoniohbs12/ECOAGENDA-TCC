@@ -10,3 +10,5 @@ Organização da Equipe (relativa mediante necessidade):
 Os membros são : Antônio , Vitor e Vitoria.
 Responsáveis pelo código: Antônio e Vitor 
 Responsáveis pela parte de documentos desenvolvimento de diagramas : Vitoria
+
+Data criação : 2024
