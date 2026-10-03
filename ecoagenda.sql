@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/09/2026 às 04:55
+-- Tempo de geração: 03/10/2026 às 06:38
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -60,16 +60,21 @@ CREATE TABLE `agendamento` (
 
 INSERT INTO `agendamento` (`id`, `criado_por`, `descricao`, `data_pedido`, `foto`, `morador_email`, `status`) VALUES
 (1, 'victorm10upload@gmail.com', 'Tipo de resíduo: muita madeira | Quantidade aproximada: 1 madeira | Descrição: toras de madeira', '2026-09-18 22:43:17', 'uploads/morador_6aade8b5732203.36680789.webp', 'victorm10upload@gmail.com', 'Concluído'),
-(2, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: galhos | Quantidade aproximada: 13 galhos | Descrição: asdasdasdas', '2026-09-18 22:51:38', 'uploads/morador_6aadeaaac97ab1.39015246.jpg', 'antoniohbdasilva2@gmail.com', 'Em andamento'),
+(2, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: galhos | Quantidade aproximada: 13 galhos | Descrição: asdasdasdas', '2026-09-18 22:51:38', 'uploads/morador_6aadeaaac97ab1.39015246.jpg', 'antoniohbdasilva2@gmail.com', 'Suspenso'),
 (3, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: armario de madeira | Quantidade aproximada: 1 armario | Descrição: peças desmontadas de madeira de um armario', '2026-09-19 01:26:37', 'uploads/morador_6aae0efd234539.40643675.jpg', 'antoniohbdasilva2@gmail.com', 'Concluído'),
 (4, 'vitinlegal@gmail.com', 'Tipo de resíduo: madeira (pau) | Quantidade aproximada: 3 paus | Descrição: muito pau', '2026-09-22 19:54:13', 'uploads/morador_6ab30715750b34.02704664.jpg', 'vitinlegal@gmail.com', 'Concluído'),
 (5, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: 2 moveis | Descrição: moveis de madeira', '2026-09-26 18:56:36', 'uploads/morador_6ab83f9476df49.01906560.webp', 'antoniohbdasilva2@gmail.com', 'Concluído'),
-(6, 'vitinlegal@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: muitos moveis | Descrição: muitos moveis de madeira', '2026-09-28 18:49:37', 'uploads/morador_6abae0f186d893.24242621.jpg', 'vitinlegal@gmail.com', 'Em análise'),
-(7, 'vivianjos@gmail.com', 'Tipo de resíduo: madeira | Quantidade aproximada: muita madeira | Descrição: bastante madeira', '2026-09-29 09:35:53', 'uploads/morador_6abbb0a94074d3.54264948.png', 'vivianjos@gmail.com', 'Em análise'),
-(8, 'vivianjos@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: 1 metro cubico | Descrição: muitos moveis de madeira', '2026-09-29 17:37:20', 'uploads/morador_6abc21804bc6a8.21962931.png', 'vivianjos@gmail.com', 'Em análise'),
-(9, 'vivianjos@gmail.com', 'Tipo de resíduo: teste | Quantidade aproximada: teste | Descrição: teste', '2026-09-29 17:37:58', NULL, 'vivianjos@gmail.com', 'Em análise'),
-(10, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 2 | Quantidade aproximada: teste 2 | Descrição: teste', '2026-09-29 17:42:17', NULL, 'vivianjos@gmail.com', 'Encaminhado'),
-(11, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 3 | Quantidade aproximada: teste 3 | Descrição: teste 3', '2026-09-29 17:46:32', NULL, 'vivianjos@gmail.com', 'Concluído');
+(6, 'vitinlegal@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: muitos moveis | Descrição: muitos moveis de madeira', '2026-09-28 18:49:37', 'uploads/morador_6abae0f186d893.24242621.jpg', 'vitinlegal@gmail.com', 'A caminho'),
+(7, 'vivianjos@gmail.com', 'Tipo de resíduo: madeira | Quantidade aproximada: muita madeira | Descrição: bastante madeira', '2026-09-29 09:35:53', 'uploads/morador_6abbb0a94074d3.54264948.png', 'vivianjos@gmail.com', 'Encaminhado'),
+(8, 'vivianjos@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: 1 metro cubico | Descrição: muitos moveis de madeira', '2026-09-29 17:37:20', 'uploads/morador_6abc21804bc6a8.21962931.png', 'vivianjos@gmail.com', 'Encaminhado'),
+(9, 'vivianjos@gmail.com', 'Tipo de resíduo: teste | Quantidade aproximada: teste | Descrição: teste', '2026-09-29 17:37:58', NULL, 'vivianjos@gmail.com', 'A caminho'),
+(10, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 2 | Quantidade aproximada: teste 2 | Descrição: teste', '2026-09-29 17:42:17', NULL, 'vivianjos@gmail.com', 'Em andamento'),
+(11, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 3 | Quantidade aproximada: teste 3 | Descrição: teste 3', '2026-09-29 17:46:32', NULL, 'vivianjos@gmail.com', 'Concluído'),
+(12, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: teste.notificacao | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 19:32:41', 'uploads/morador_6ac03109d5d6b4.44504543.webp', 'antoniohbdasilva2@gmail.com', 'Em andamento'),
+(13, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: teste.agendado | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 19:51:36', NULL, 'antoniohbdasilva2@gmail.com', 'A caminho'),
+(14, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testefinal | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:15:12', NULL, 'antoniohbdasilva2@gmail.com', 'Concluído'),
+(15, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testeparasuspender | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:52:26', NULL, 'antoniohbdasilva2@gmail.com', 'Suspenso'),
+(16, 'vitoria09129@gmail.com', 'Tipo de resíduo: testeNOTIFICACAOSMTP | Quantidade aproximada: testeNOTIFICACAOSMTP | Descrição: testeNOTIFICACAOSMTP', '2026-10-03 01:25:10', 'uploads/morador_6ac083a6743228.04193189.png', 'vitoria09129@gmail.com', 'Concluído');
 
 --
 -- Acionadores `agendamento`
@@ -173,7 +178,33 @@ INSERT INTO `agendamento_historico` (`id`, `agendamento_id`, `criado_por`, `desc
 (42, 11, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 3 | Quantidade aproximada: teste 3 | Descrição: teste 3', '2026-09-29 17:46:32', NULL, 'vivianjos@gmail.com', 'Encaminhado', 'UPDATE', '2026-09-29 20:07:19', 'motorista@ecoagenda.com'),
 (43, 2, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: galhos | Quantidade aproximada: 13 galhos | Descrição: asdasdasdas', '2026-09-18 22:51:38', 'uploads/morador_6aadeaaac97ab1.39015246.jpg', 'antoniohbdasilva2@gmail.com', 'Encaminhado', 'UPDATE', '2026-09-29 20:08:50', 'motorista@ecoagenda.com'),
 (44, 11, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 3 | Quantidade aproximada: teste 3 | Descrição: teste 3', '2026-09-29 17:46:32', NULL, 'vivianjos@gmail.com', 'Em andamento', 'UPDATE', '2026-09-29 20:09:18', 'motorista@ecoagenda.com'),
-(45, 10, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 2 | Quantidade aproximada: teste 2 | Descrição: teste', '2026-09-29 17:42:17', NULL, 'vivianjos@gmail.com', 'Em análise', 'UPDATE', '2026-09-29 20:38:37', 'secretaria@ecoagenda.com');
+(45, 10, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 2 | Quantidade aproximada: teste 2 | Descrição: teste', '2026-09-29 17:42:17', NULL, 'vivianjos@gmail.com', 'Em análise', 'UPDATE', '2026-09-29 20:38:37', 'secretaria@ecoagenda.com'),
+(46, 9, 'vivianjos@gmail.com', 'Tipo de resíduo: teste | Quantidade aproximada: teste | Descrição: teste', '2026-09-29 17:37:58', NULL, 'vivianjos@gmail.com', 'Em análise', 'UPDATE', '2026-10-01 17:46:07', 'secretaria@ecoagenda.com'),
+(47, 8, 'vivianjos@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: 1 metro cubico | Descrição: muitos moveis de madeira', '2026-09-29 17:37:20', 'uploads/morador_6abc21804bc6a8.21962931.png', 'vivianjos@gmail.com', 'Em análise', 'UPDATE', '2026-10-01 18:02:38', 'secretaria@ecoagenda.com'),
+(48, 7, 'vivianjos@gmail.com', 'Tipo de resíduo: madeira | Quantidade aproximada: muita madeira | Descrição: bastante madeira', '2026-09-29 09:35:53', 'uploads/morador_6abbb0a94074d3.54264948.png', 'vivianjos@gmail.com', 'Em análise', 'UPDATE', '2026-10-01 19:03:17', 'secretaria@ecoagenda.com'),
+(49, 6, 'vitinlegal@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: muitos moveis | Descrição: muitos moveis de madeira', '2026-09-28 18:49:37', 'uploads/morador_6abae0f186d893.24242621.jpg', 'vitinlegal@gmail.com', 'Em análise', 'UPDATE', '2026-10-01 19:09:23', 'secretaria@ecoagenda.com'),
+(50, 12, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: teste.notificacao | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 19:32:41', 'uploads/morador_6ac03109d5d6b4.44504543.webp', 'antoniohbdasilva2@gmail.com', 'Em análise', 'UPDATE', '2026-10-02 19:32:58', 'secretaria@ecoagenda.com'),
+(51, 2, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: galhos | Quantidade aproximada: 13 galhos | Descrição: asdasdasdas', '2026-09-18 22:51:38', 'uploads/morador_6aadeaaac97ab1.39015246.jpg', 'antoniohbdasilva2@gmail.com', 'Em andamento', 'UPDATE', '2026-10-02 19:34:49', 'secretaria@ecoagenda.com'),
+(52, 12, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: teste.notificacao | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 19:32:41', 'uploads/morador_6ac03109d5d6b4.44504543.webp', 'antoniohbdasilva2@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 19:35:41', 'roberto@gmail.com'),
+(53, 10, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 2 | Quantidade aproximada: teste 2 | Descrição: teste', '2026-09-29 17:42:17', NULL, 'vivianjos@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 20:02:59', 'motorista@ecoagenda.com'),
+(54, 10, 'vivianjos@gmail.com', 'Tipo de resíduo: teste 2 | Quantidade aproximada: teste 2 | Descrição: teste', '2026-09-29 17:42:17', NULL, 'vivianjos@gmail.com', 'A caminho', 'UPDATE', '2026-10-02 20:03:27', 'motorista@ecoagenda.com'),
+(55, 9, 'vivianjos@gmail.com', 'Tipo de resíduo: teste | Quantidade aproximada: teste | Descrição: teste', '2026-09-29 17:37:58', NULL, 'vivianjos@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 20:07:21', 'roberto@gmail.com'),
+(56, 13, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: teste.agendado | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 19:51:36', NULL, 'antoniohbdasilva2@gmail.com', 'Em análise', 'UPDATE', '2026-10-02 20:08:41', 'secretaria@ecoagenda.com'),
+(57, 13, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: teste.agendado | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 19:51:36', NULL, 'antoniohbdasilva2@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 20:09:04', 'motorista@ecoagenda.com'),
+(58, 6, 'vitinlegal@gmail.com', 'Tipo de resíduo: moveis de madeira | Quantidade aproximada: muitos moveis | Descrição: muitos moveis de madeira', '2026-09-28 18:49:37', 'uploads/morador_6abae0f186d893.24242621.jpg', 'vitinlegal@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 20:14:28', 'motorista@ecoagenda.com'),
+(59, 14, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testefinal | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:15:12', NULL, 'antoniohbdasilva2@gmail.com', 'Em análise', 'UPDATE', '2026-10-02 20:15:28', 'secretaria@ecoagenda.com'),
+(60, 14, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testefinal | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:15:12', NULL, 'antoniohbdasilva2@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 20:15:47', 'motorista@ecoagenda.com'),
+(61, 14, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testefinal | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:15:12', NULL, 'antoniohbdasilva2@gmail.com', 'A caminho', 'UPDATE', '2026-10-02 20:16:16', 'motorista@ecoagenda.com'),
+(62, 14, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testefinal | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:15:12', NULL, 'antoniohbdasilva2@gmail.com', 'Em andamento', 'UPDATE', '2026-10-02 20:16:43', 'motorista@ecoagenda.com'),
+(63, 15, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testeparasuspender | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:52:26', NULL, 'antoniohbdasilva2@gmail.com', 'Em análise', 'UPDATE', '2026-10-02 20:52:44', 'secretaria@ecoagenda.com'),
+(64, 15, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testeparasuspender | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:52:26', NULL, 'antoniohbdasilva2@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-02 20:53:20', 'motorista@ecoagenda.com'),
+(65, 15, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testeparasuspender | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:52:26', NULL, 'antoniohbdasilva2@gmail.com', 'A caminho', 'UPDATE', '2026-10-02 20:53:34', 'motorista@ecoagenda.com'),
+(66, 15, 'antoniohbdasilva2@gmail.com', 'Tipo de resíduo: testeparasuspender | Quantidade aproximada: teste | Descrição: teste', '2026-10-02 20:52:26', NULL, 'antoniohbdasilva2@gmail.com', 'Em andamento', 'UPDATE', '2026-10-02 20:53:55', 'motorista@ecoagenda.com'),
+(67, 15, 'antoniohbdasilva2@gmail.com', 'residuos misturados com plastico', '2026-10-02 20:52:26', 'uploads/suspensao_6ac044131729a7.96070313.jpg', 'antoniohbdasilva2@gmail.com', 'Suspenso', 'COLETA_SUSPENSA', '2026-10-02 20:53:55', 'motorista@ecoagenda.com'),
+(68, 16, 'vitoria09129@gmail.com', 'Tipo de resíduo: testeNOTIFICACAOSMTP | Quantidade aproximada: testeNOTIFICACAOSMTP | Descrição: testeNOTIFICACAOSMTP', '2026-10-03 01:25:10', 'uploads/morador_6ac083a6743228.04193189.png', 'vitoria09129@gmail.com', 'Em análise', 'UPDATE', '2026-10-03 01:25:47', 'secretaria@ecoagenda.com'),
+(69, 16, 'vitoria09129@gmail.com', 'Tipo de resíduo: testeNOTIFICACAOSMTP | Quantidade aproximada: testeNOTIFICACAOSMTP | Descrição: testeNOTIFICACAOSMTP', '2026-10-03 01:25:10', 'uploads/morador_6ac083a6743228.04193189.png', 'vitoria09129@gmail.com', 'Encaminhado', 'UPDATE', '2026-10-03 01:26:43', 'motorista@ecoagenda.com'),
+(70, 16, 'vitoria09129@gmail.com', 'Tipo de resíduo: testeNOTIFICACAOSMTP | Quantidade aproximada: testeNOTIFICACAOSMTP | Descrição: testeNOTIFICACAOSMTP', '2026-10-03 01:25:10', 'uploads/morador_6ac083a6743228.04193189.png', 'vitoria09129@gmail.com', 'A caminho', 'UPDATE', '2026-10-03 01:27:24', 'motorista@ecoagenda.com'),
+(71, 16, 'vitoria09129@gmail.com', 'Tipo de resíduo: testeNOTIFICACAOSMTP | Quantidade aproximada: testeNOTIFICACAOSMTP | Descrição: testeNOTIFICACAOSMTP', '2026-10-03 01:25:10', 'uploads/morador_6ac083a6743228.04193189.png', 'vitoria09129@gmail.com', 'Em andamento', 'UPDATE', '2026-10-03 01:27:38', 'motorista@ecoagenda.com');
 
 -- --------------------------------------------------------
 
@@ -202,7 +233,12 @@ INSERT INTO `agendamento_morador_endereco` (`agendamento_id`, `endereco_id`, `mo
 (8, 6, 'vivianjos@gmail.com'),
 (9, 6, 'vivianjos@gmail.com'),
 (10, 6, 'vivianjos@gmail.com'),
-(11, 6, 'vivianjos@gmail.com');
+(11, 6, 'vivianjos@gmail.com'),
+(12, 1, 'antoniohbdasilva2@gmail.com'),
+(13, 1, 'antoniohbdasilva2@gmail.com'),
+(14, 1, 'antoniohbdasilva2@gmail.com'),
+(15, 1, 'antoniohbdasilva2@gmail.com'),
+(16, 7, 'vitoria09129@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -229,8 +265,17 @@ INSERT INTO `coleta` (`motorista_email`, `agendamento_id`, `data_inicio`, `data_
 ('motorista@ecoagenda.com', 3, '2026-09-26 23:44:18', NULL, '2026-09-26 18:44:30', 'uploads/motorista_6ab83cbec871f4.40290833.jpg'),
 ('motorista@ecoagenda.com', 4, '2026-09-23 01:05:08', NULL, '2026-09-22 20:05:40', 'uploads/motorista_6ab309c43d93a7.24430600.jpg'),
 ('motorista@ecoagenda.com', 5, '2026-09-29 15:01:24', NULL, '2026-09-29 10:01:32', 'uploads/motorista_6abbb6acc13897.79334361.png'),
-('motorista@ecoagenda.com', 10, '2026-09-29 20:38:37', NULL, NULL, NULL),
-('motorista@ecoagenda.com', 11, '2026-09-30 01:07:19', NULL, '2026-09-29 20:09:18', 'uploads/motorista_6abc451e34f481.25685946.png');
+('motorista@ecoagenda.com', 6, '2026-10-01 19:09:23', NULL, NULL, NULL),
+('motorista@ecoagenda.com', 10, '2026-10-03 01:03:27', NULL, NULL, NULL),
+('motorista@ecoagenda.com', 11, '2026-09-30 01:07:19', NULL, '2026-09-29 20:09:18', 'uploads/motorista_6abc451e34f481.25685946.png'),
+('motorista@ecoagenda.com', 13, '2026-10-02 20:08:41', NULL, NULL, NULL),
+('motorista@ecoagenda.com', 14, '2026-10-03 01:16:16', NULL, '2026-10-02 20:16:43', 'uploads/motorista_6ac03b5bcb8130.91245650.jpg'),
+('motorista@ecoagenda.com', 15, '2026-10-03 01:53:34', NULL, NULL, NULL),
+('motorista@ecoagenda.com', 16, '2026-10-03 06:27:24', NULL, '2026-10-03 01:27:38', 'uploads/motorista_6ac0843a1dbb28.73718389.jpg'),
+('roberto@gmail.com', 7, '2026-10-01 19:03:17', NULL, NULL, NULL),
+('roberto@gmail.com', 8, '2026-10-01 18:02:38', NULL, NULL, NULL),
+('roberto@gmail.com', 9, '2026-10-01 17:46:07', NULL, NULL, NULL),
+('roberto@gmail.com', 12, '2026-10-03 00:35:41', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -260,7 +305,8 @@ INSERT INTO `endereco` (`id`, `email`, `cep`, `estado`, `cidade`, `rua`, `bairro
 (3, 'guigui@gmail.com', '82840320', 'PR', 'Curitiba', 'Rua Rio Guaporé', 'Bairro Alto', '1212', 'casa'),
 (4, 'vitinlegal@gmail.com', '83330060', 'PR', 'Pinhais', 'Rua José Linhares', 'Jardim Amélia', '67', 'casa com garagem'),
 (5, 'vitinlegal@gmail.com', '83328165', 'PR', 'Pinhais', 'Rua Íris', 'Jardim Karla', '67', 'casa'),
-(6, 'vivianjos@gmail.com', '83330060', 'PR', 'Pinhais', 'Rua José Linhares', 'Jardim Amélia', '112', 'casa com garagem');
+(6, 'vivianjos@gmail.com', '83330060', 'PR', 'Pinhais', 'Rua José Linhares', 'Jardim Amélia', '112', 'casa com garagem'),
+(7, 'vitoria09129@gmail.com', '83330060', 'PR', 'Pinhais', 'Rua José Linhares', 'Jardim Amélia', '112', 'casa com garagem');
 
 -- --------------------------------------------------------
 
@@ -285,6 +331,7 @@ INSERT INTO `morador` (`email`, `cpf`, `telefone`, `nascimento`) VALUES
 ('morador@ecoagenda.com', '55566677788', '(41) 99999-2222', '1990-01-10'),
 ('victorm10upload@gmail.com', '14274143945', '41676767676', '2008-02-01'),
 ('vitinlegal@gmail.com', '76767676767', '41999999999', '1967-07-06'),
+('vitoria09129@gmail.com', '03334413977', '41 8733-3535', '2007-06-26'),
 ('vivianjos@gmail.com', '11536339903', '41987333535', '2007-06-26');
 
 -- --------------------------------------------------------
@@ -308,7 +355,8 @@ INSERT INTO `morador_endereco` (`endereco_id`, `morador_email`) VALUES
 (3, 'guigui@gmail.com'),
 (4, 'vitinlegal@gmail.com'),
 (5, 'vitinlegal@gmail.com'),
-(6, 'vivianjos@gmail.com');
+(6, 'vivianjos@gmail.com'),
+(7, 'vitoria09129@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -371,8 +419,17 @@ INSERT INTO `secretaria_agendamento` (`secretaria_email`, `agendamento_id`) VALU
 ('secretaria@ecoagenda.com', 3),
 ('secretaria@ecoagenda.com', 4),
 ('secretaria@ecoagenda.com', 5),
+('secretaria@ecoagenda.com', 6),
+('secretaria@ecoagenda.com', 7),
+('secretaria@ecoagenda.com', 8),
+('secretaria@ecoagenda.com', 9),
 ('secretaria@ecoagenda.com', 10),
-('secretaria@ecoagenda.com', 11);
+('secretaria@ecoagenda.com', 11),
+('secretaria@ecoagenda.com', 12),
+('secretaria@ecoagenda.com', 13),
+('secretaria@ecoagenda.com', 14),
+('secretaria@ecoagenda.com', 15),
+('secretaria@ecoagenda.com', 16);
 
 -- --------------------------------------------------------
 
@@ -389,6 +446,7 @@ CREATE TABLE `status_agendamento` (
 --
 
 INSERT INTO `status_agendamento` (`status`) VALUES
+('A caminho'),
 ('Concluído'),
 ('Em análise'),
 ('Em andamento'),
@@ -413,7 +471,7 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`email`, `senha`, `nome`) VALUES
 ('admin@ecoagenda.com', '$2y$12$l7VXBTAehG5/w0A5gKUKru80OIQXL/Jz5.gEWox2tvPKWVTHVri.i', 'Administrador EcoAgenda'),
-('antoniohbdasilva2@gmail.com', '$2y$10$dCmi7Vsz.I0vfr4iqggAqezs1sEl6G.mpiIyz469KnDGve5N9eMpu', 'antonio honorio'),
+('antoniohbdasilva2@gmail.com', '$2y$10$1MCHlPhd.4uQf6UkJYYUaOfuQUYUGEapBHTMMRA3W0moJp1C7GWxC', 'antonio honorio'),
 ('guigui@gmail.com', '$2y$10$3wTKTf386/aZJxzQB08nB.9tmxVwHXyl0TaFMfVzNmPKq2zvMgmmi', 'gui baladinha'),
 ('morador@ecoagenda.com', '$2y$12$l7VXBTAehG5/w0A5gKUKru80OIQXL/Jz5.gEWox2tvPKWVTHVri.i', 'Morador EcoAgenda'),
 ('motorista@ecoagenda.com', '$2y$12$l7VXBTAehG5/w0A5gKUKru80OIQXL/Jz5.gEWox2tvPKWVTHVri.i', 'Motorista EcoAgenda'),
@@ -421,6 +479,7 @@ INSERT INTO `usuario` (`email`, `senha`, `nome`) VALUES
 ('secretaria@ecoagenda.com', '$2y$12$l7VXBTAehG5/w0A5gKUKru80OIQXL/Jz5.gEWox2tvPKWVTHVri.i', 'Secretaria EcoAgenda'),
 ('victorm10upload@gmail.com', '$2y$10$swA6uorNe5ZOgQl.p34u.ea2wSSICJFqGP9FuCTdv6octYvvoq8Nm', 'victor matheus'),
 ('vitinlegal@gmail.com', '$2y$10$Hs3.h5UjZpCWsA5vc3UgIeN8sqcSvaOX4GfXKqCcNTSs7i4voylAG', 'vitin legal'),
+('vitoria09129@gmail.com', '$2y$10$ljtMzfguAxqYHBeGC8EB/.Uyg3PVN9VYV/chEGD05/4s7h4fVxCqO', 'vitoria dos anjos'),
 ('vitoria@gmail.com', '$2y$10$Ii4MujhwGTaOklAq1ivbQuhKP8mI7iCroM2SUa3C9Ew3QLu0IdMCG', 'Vitoria'),
 ('vivianjos@gmail.com', '$2y$10$1ot6Ebev4g67qNjxKSCP8O841EGgaDpeTNz1Yv5gt45wC/jBr1Tt2', 'vitoria anjos');
 
@@ -531,19 +590,19 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `agendamento`
 --
 ALTER TABLE `agendamento`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de tabela `agendamento_historico`
 --
 ALTER TABLE `agendamento_historico`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT de tabela `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restrições para tabelas despejadas
