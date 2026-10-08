@@ -16,3 +16,8 @@ foreach (['Concluído','Concluido','Suspenso','Cancelado'] as $status) {
 $p=prazoMotorista(['status'=>'A caminho','data_pedido'=>'2026-02-31'],'2026-10-08');
 verificar($p['limite']==='' && $p['classe']==='sem-prazo', 'Não inventar prazo para data inválida');
 echo "Prazos: OK\n";
+verificar(materialMotorista('Tipo de resíduo: madeira | Quantidade aproximada: 3 | Descrição: armário')==='madeira', 'Extrair material sem misturar descrição');
+verificar(materialMotorista('Material: plástico')==='plástico', 'Material alternativo');
+verificar(materialMotorista('')==='Material não informado', 'Material ausente');
+$p=prazoMotorista(['status'=>'A caminho','data_pedido'=>'2026-10-02'],'2026-10-09');
+verificar($p['classe']==='hoje' && $p['texto']==='Dentro do prazo', 'Hoje pertence aos pedidos dentro do prazo');
