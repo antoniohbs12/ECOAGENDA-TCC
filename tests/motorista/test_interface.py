@@ -9,14 +9,15 @@ with sync_playwright() as p:
     assert page.goto(url).status==200
     assert page.locator('.mot-day').count()==7
     assert page.locator('.filtro').count()==0
-    for select in ['#mot-detail-filter','#mot-demand-prazo']:
+    for select in ['#mot-detail-filter']:
         assert page.locator(select+' option').evaluate_all('(els)=>els.map(e=>e.value)')==['todos','valido','vencido']
     week=page.locator('#mot-week-label').inner_text();page.click('#mot-next');assert page.locator('#mot-week-label').inner_text()!=week
     page.click('#mot-current');assert page.locator('#mot-week-label').inner_text()==week
-    page.select_option('#mot-demand-status','andamento');page.select_option('#mot-demand-prazo','vencido')
-    cards=page.locator('.mot-demand-card:visible');assert cards.count()>0
-    assert all(x==['andamento','vencido'] for x in cards.evaluate_all('(els)=>els.map(e=>[e.dataset.status,e.dataset.prazo])'))
-    cards.first.locator('.btn-detalhes').click();assert page.locator('#modalDetalhes').is_visible()
+    assert page.locator('.mot-demands').count()==0
+    assert 'VENCEM HOJE' not in page.locator('body').inner_text()
+    page.locator('.mot-calendar-order',has_text='Pedido #10').click()
+    assert page.locator('#modalDetalhes').is_visible()
+    assert page.locator('#modalPedidoId').inner_text()=='Pedido #10'
     assert 'Prazo vencido' in page.locator('#mot-modal-prazo-texto').inner_text()
     page.locator('#mot-modal-actions button',has_text='Concluir coleta').click();assert page.locator('#modalConcluir').is_visible();assert not page.locator('#modalDetalhes').is_visible()
     page.keyboard.press('Escape')
@@ -39,4 +40,4 @@ with sync_playwright() as p:
         page.locator('.menu-link[data-section="inicio"]').click();page.screenshot(path='/tmp/motorista-dashboard.png',full_page=True)
     assert not errors, errors
     browser.close()
-    print('Interface: filtros combinados, prazo hoje, detalhes, ações e celular OK')
+    print('Interface: calendário único, detalhes pelo pedido, filtros, ações e celular OK')
