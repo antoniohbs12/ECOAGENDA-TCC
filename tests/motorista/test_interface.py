@@ -7,6 +7,9 @@ with sync_playwright() as p:
     context.add_cookies([{'name':'PHPSESSID','value':os.environ['ECOAGENDA_TEST_SESSION'],'url':url}])
     page=context.new_page(); errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
     assert page.goto(url).status==200
+    page.evaluate('document.fonts.ready')
+    assert page.evaluate("document.fonts.check('600 14px \"Montserrat\"')")
+    assert page.locator('.section-top').count()==0
     assert page.locator('.mot-day').count()==7
     assert page.locator('.filtro').count()==0
     for select in ['#mot-detail-filter']:
@@ -15,7 +18,7 @@ with sync_playwright() as p:
     page.click('#mot-current');assert page.locator('#mot-week-label').inner_text()==week
     assert page.locator('.mot-demands').count()==0
     assert 'VENCEM HOJE' not in page.locator('body').inner_text()
-    page.locator('.mot-calendar-order',has_text='Pedido #10').click()
+    page.locator('.mot-calendar-order[aria-label^="Ver detalhes do pedido 10,"]').click()
     assert page.locator('#modalDetalhes').is_visible()
     assert page.locator('#modalPedidoId').inner_text()=='Pedido #10'
     assert 'Prazo vencido' in page.locator('#mot-modal-prazo-texto').inner_text()
@@ -38,6 +41,15 @@ with sync_playwright() as p:
     if os.environ.get('ECOAGENDA_SCREENSHOTS'):
         page.screenshot(path='/tmp/motorista-resumo.png',full_page=True)
         page.locator('.menu-link[data-section="inicio"]').click();page.screenshot(path='/tmp/motorista-dashboard.png',full_page=True)
+    page.locator('.menu-link[data-section="inicio"]').click()
+    page.emulate_media(reduced_motion='reduce')
+    page.click('#mot-next')
+    assert page.locator('#mot-calendar').evaluate('(e)=>e.getAnimations().length')==0
+    page.click('#mot-current')
+    page.locator('.mot-calendar-order').first.click()
+    page.keyboard.press('Shift+Tab')
+    assert page.locator('#modalDetalhes').evaluate('(e)=>e.contains(document.activeElement)')
+    page.keyboard.press('Escape')
     assert not errors, errors
     browser.close()
     print('Interface: calendário único, detalhes pelo pedido, filtros, ações e celular OK')
